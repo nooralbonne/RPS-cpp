@@ -6,7 +6,6 @@ A simple console-based Rock-Paper-Scissors game implemented in C++.
 - [Features](#features)
 - [How to Play](#how-to-play)
 - [Example Gameplay](#example-gameplay)
-- [License](#license)
 
 ## Introduction
 This is a classic Rock-Paper-Scissors game where a player competes against the computer. The player can choose to play one or more rounds, and the game will keep track of the score. At the end of all rounds, the game will declare the winner.
