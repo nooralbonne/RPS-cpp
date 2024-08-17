@@ -136,7 +136,6 @@ void finalgameresult(stgameresult& gameresult) {
     cout << "\n\t\t\t\t--------------------[Game Results]--------------------\n";
     cout << "\t\t\t\tGame Rounds        : " << gameresult.gamesround << endl;
     cout << "\t\t\t\tPlayer1 won times  : " << gameresult.winplayertimes << endl;
-
     cout << "\t\t\t\tComputer won times : " << gameresult.wincomputertimes << endl;
     cout << "\t\t\t\tDraw times         : " << gameresult.drawround << endl;
     cout << "\t\t\t\tFinal Winner       : " << gameresult.winnernamegame << endl;
@@ -151,6 +150,11 @@ void finalgameresult(stgameresult& gameresult) {
     else {
         cout << "\n \t\t\t                            * It's a Draw! *                     \n";
     }
+}
+
+void ResetScreen() { 
+    system("cls"); 
+    system("color 0F"); 
 }
 
 void startgame() {
@@ -201,6 +205,7 @@ int main() {
 
     char playagainchice;
     do {
+        ResetScreen();
         startgame();
         cout << "Do you want to play again? Y/N\n";
         cin >> playagainchice;
